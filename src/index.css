@@ -1,0 +1,25 @@
+body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #fff;
+    background-color: #333;
+  }
+}
+
+.person-container {
+  max-height: 400px;
+  overflow: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
