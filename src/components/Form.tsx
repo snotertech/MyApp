@@ -24,6 +24,7 @@ export default function Form({ onAddPerson }: FormProps) {
           variant="outlined"
           size="small"
           placeholder=""
+          color="success"
           value={newPerson}
           onChange={(e) => setNewPerson(e.target.value)}
         />

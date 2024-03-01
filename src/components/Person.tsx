@@ -74,20 +74,22 @@ export default function Person({
             </span>
 
             <div style={{ position: "relative", left: 50 }}>
-              <Button
-                variant="contained"
-                startIcon={<DeleteIcon />}
-                onClick={onRemovePerson}
-              >
-                Remove
-              </Button>
-              <Button
-                variant="contained"
-                startIcon={<EditIcon />}
-                onClick={handleEditClick}
-              >
-                Edit
-              </Button>
+              <Stack spacing={1} direction="row">
+                <Button
+                  variant="contained"
+                  startIcon={<DeleteIcon />}
+                  onClick={onRemovePerson}
+                >
+                  Remove
+                </Button>
+                <Button
+                  variant="contained"
+                  startIcon={<EditIcon />}
+                  onClick={handleEditClick}
+                >
+                  Edit
+                </Button>
+              </Stack>
             </div>
           </Stack>
         </div>
